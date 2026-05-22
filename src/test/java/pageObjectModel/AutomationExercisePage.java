@@ -1,16 +1,16 @@
 package pageObjectModel;
 
-import com.microsoft.playwright.Page;
 
+import com.microsoft.playwright.Page;
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 
+
 public class AutomationExercisePage {
-
     Page page;
-
     public AutomationExercisePage(Page page) {
         this.page = page;
     }
+
 
     //All locators
     String loginLink = "a[href='/login']";
@@ -62,6 +62,7 @@ public class AutomationExercisePage {
     public void clickLogin() {
         page.locator(loginLink).click();
     }
+
 
 
     public void verifyLoginSignupPage() {

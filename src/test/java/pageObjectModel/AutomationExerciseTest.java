@@ -5,6 +5,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+
 public class AutomationExerciseTest {
 
     Playwright playwright;
@@ -12,6 +13,8 @@ public class AutomationExerciseTest {
     BrowserContext context;
     Page page;
     AutomationExercisePage automation;
+
+
 
     @BeforeTest
     public void setUp() {
@@ -23,6 +26,8 @@ public class AutomationExerciseTest {
         page = context.newPage();
         automation = new AutomationExercisePage(page);
     }
+
+
 
     @Test
     public void testFlow() {
@@ -55,6 +60,8 @@ public class AutomationExerciseTest {
         automation.clickContinue();
         automation.verifyOrderPlacedPage();
     }
+
+
 
     @AfterTest
     public void tearDown() {
