@@ -25,6 +25,7 @@ public class AutomationExerciseTest {
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
+
             page.locator("button[data-qa='signup-button']").click();
 
             Assert.assertEquals(page.title(), "Automation Exercise - Signup");
