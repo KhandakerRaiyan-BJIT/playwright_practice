@@ -29,7 +29,7 @@ public class AutomationExerciseTest {
         automation.openWebsite();
         automation.clickLogin();
         automation.verifyLoginSignupPage();
-        automation.fillSignupForm("Interview", "yalj5sphf60@jkotypc12.com");
+        automation.fillSignupForm("Interview", "yalj5sphf601@jkotypc12.com");
         automation.verifySignupPage();
 
         automation.fillPersonalDetails();

@@ -250,7 +250,6 @@ public class AutomationExercisePage {
         try {
             assertThat(page).hasURL("https://automationexercise.com/payment_done/*");
             System.out.println("Order Placed Page Verified");
-
         } catch (AssertionError e) {
             System.out.println("Order Placed Page Verification Failed");
             System.out.println("Actual Title: " + page.title());
